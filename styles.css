@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/beautiful-sunset-at-the-lake-with-greenery-on-the-coast-and-amazing-cloudy-sky_181624-3746.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705017600&semt=ais');
+    background-size: cover;
+    animation: backgroundsAnimation 30s ease infinite;
+    
+}
+@keyframes backgroundAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.counter-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+button {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#count {
+    font-size: 2rem;
+    margin: 0 10px;
+}
